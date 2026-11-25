@@ -1,0 +1,21 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Run engine tests on save",
+      "trigger": "PostFileSave",
+      "matcher": "src/engine/.*\\.ts$",
+      "action": { "type": "command", "command": "npm run test:engine" },
+      "timeout": 120
+    },
+    {
+      "name": "Keep fixtures in sync with the contract",
+      "trigger": "PostFileSave",
+      "matcher": "src/engine/types\\.ts$",
+      "action": {
+        "type": "agent",
+        "prompt": "types.ts changed. Update src/fixtures/*.json and src/audio/fakePlayer.ts so they still match the contract. Do not edit src/ui or src/app. List what Sunny needs to change on her side."
+      }
+    }
+  ]
+}
