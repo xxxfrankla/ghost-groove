@@ -8,7 +8,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "test": "vitest run --passWithNoTests",
-    "test:engine": "vitest run src/engine --passWithNoTests"
+    "test:engine": "vitest run src/engine --passWithNoTests",
+    "regen:fixtures": "tsx scripts/regen-fixtures.ts"
   },
   "dependencies": {
     "react": "^19.3.1",
@@ -16,10 +17,12 @@
     "tone": "^15.1.22"
   },
   "devDependencies": {
+    "@types/node": "^26.6.10",
     "@types/react": "^19.3.1",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.3.0",
     "fast-check": "^4.11.0",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vite": "^8.3.8",
     "vitest": "^5.1.1"

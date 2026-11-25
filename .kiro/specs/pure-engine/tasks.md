@@ -32,66 +32,66 @@ Implement the four engine functions in `src/engine` as pure TypeScript, keep `ty
     - A band over a dim gradient spanning under 48 luma levels gives all scores below `accentThreshold(100)`
     - _Requirements: 3.1, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9_
 
-- [ ] 4. Implement `generatePattern`
-  - [ ] 4.1 Create `src/engine/generate.ts` with `bandVelocities` (threshold, cap, tie-break, ghost gating) and the track B pitch and length rules
+- [x] 4. Implement `generatePattern`
+  - [x] 4.1 Create `src/engine/generate.ts` with `bandVelocities` (threshold, cap, tie-break, ghost gating) and the track B pitch and length rules
     - Track B step `i` pitch is `pool[bassLine[i]]` in the base octave from the B register
     - Include the Hollow drone and its cap adjustment
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.6, 5.1, 5.2, 5.8, 6.1, 6.2, 6.3, 6.4, 6.5, 6.6, 7.1, 7.2_
-  - [ ] 4.2 Write unit tests in `src/engine/generate.test.ts`
+  - [x] 4.2 Write unit tests in `src/engine/generate.test.ts`
     - Hollow clap is exactly step 12 and Neon clap is steps 4 and 12
     - B pitches follow `bassLine` for both moods
     - Tie-break with 16 equal scores, ghost gating at density 24 vs 25, Hollow kick at 89 vs 90, register octaves, drone absent on low signal
     - _Requirements: 4.2, 4.3, 5.3, 5.4, 5.6, 5.7, 6.2, 6.3, 6.5, 7.1_
 
-- [ ] 5. Implement `resolvePattern`
-  - [ ] 5.1 Create `src/engine/resolve.ts` that deep-copies the pattern and applies valid overrides
+- [x] 5. Implement `resolvePattern`
+  - [x] 5.1 Create `src/engine/resolve.ts` that deep-copies the pattern and applies valid overrides
     - _Requirements: 8.1, 8.2, 8.3, 8.4, 8.5_
-  - [ ] 5.2 Write unit tests in `src/engine/resolve.test.ts`
+  - [x] 5.2 Write unit tests in `src/engine/resolve.test.ts`
     - `on` keeps pitch and length, `off` drops length, invalid entries ignored, inputs not mutated
     - _Requirements: 8.1, 8.2, 8.4, 8.5_
 
-- [ ] 6. Wire up `src/engine/index.ts`
+- [x] 6. Wire up `src/engine/index.ts`
   - Remove the fixtures import and stubs, re-export `types` and the four functions
   - Check that `src/audio/fakePlayer.ts` and `src/app` still compile (read only; report problems as TODOs instead of editing `src/ui` or `src/app`)
   - _Requirements: 9.2, 9.3, 9.4_
 
-- [ ] 7. Fixtures: behaviour tests and regeneration script
-  - [ ] 7.1 Create `src/engine/fixtures.test.ts` asserting behaviour at density 50, not deep equality with `fixture.pattern`
+- [x] 7. Fixtures: behaviour tests and regeneration script
+  - [x] 7.1 Create `src/engine/fixtures.test.ts` asserting behaviour at density 50, not deep equality with `fixture.pattern`
     - Run `generatePattern({ features, bands, mood: features.suggestedMood, density: 50 })` on `emptyLot`, `neonStreet` and `blackImage`
     - `emptyLot`: band A has exactly one step with velocity 1, at index 11, and no other A step above 0
     - `blackImage`: every A and B step has velocity 0
     - `neonStreet`: the count of A and B steps with velocity above 0 is greater than the same count for `emptyLot`
     - _Requirements: 10.1, 10.2, 10.3, 10.5_
-  - [ ] 7.2 Create `scripts/regen-fixtures.ts` and add the `regen:fixtures` npm script
+  - [x] 7.2 Create `scripts/regen-fixtures.ts` and add the `regen:fixtures` npm script
     - Read `emptyLot.json`, `neonStreet.json` and `blackImage.json` in `src/fixtures`, recompute `pattern` with `generatePattern` (density `DEFAULT_DENSITY`, mood from `features.suggestedMood`), and write each file back with only `pattern` changed
     - Add `tsx` as a dev dependency (it is not installed) and add `"regen:fixtures": "tsx scripts/regen-fixtures.ts"` to `package.json` scripts
     - Keep the script out of the engine bundle and out of the test run; if `tsconfig.json` does not include `scripts`, do not add it to the app build
     - Run the script after tuning presets, not as part of tests
     - _Requirements: 10.4_
 
-- [ ] 8. Property-based tests
-  - [ ] 8.1 Create shared arbitraries in `src/engine/arbitraries.ts`
+- [x] 8. Property-based tests
+  - [x] 8.1 Create shared arbitraries in `src/engine/arbitraries.ts`
     - _Requirements: 9.1_
-  - [ ] 8.2 Write property test for determinism
+  - [x] 8.2 Write property test for determinism
     - **Property 1: Determinism**
     - **Validates: Requirements 9.1, 9.2**
-  - [ ] 8.3 Write property test for dark-safe behaviour
+  - [x] 8.3 Write property test for dark-safe behaviour
     - **Property 2: Dark-safe**
     - **Validates: Requirements 2.1, 2.2, 7.1, 7.2**
-  - [ ] 8.4 Write property test for monotonic density
+  - [x] 8.4 Write property test for monotonic density
     - **Property 3: Monotonic density**
     - **Validates: Requirements 4.5**
-  - [ ] 8.5 Write property test for the accent cap
+  - [x] 8.5 Write property test for the accent cap
     - **Property 4: Capped**
     - **Validates: Requirements 4.3, 4.4, 6.5**
-  - [ ] 8.6 Write property test for pitches in key
+  - [x] 8.6 Write property test for pitches in key
     - **Property 5: In key**
     - **Validates: Requirements 6.1**
-  - [ ] 8.7 Write property test for overrides winning
+  - [x] 8.7 Write property test for overrides winning
     - **Property 6: Overrides win**
     - **Validates: Requirements 8.1, 8.2, 8.3, 8.5**
 
-- [ ] 9. Checkpoint
+- [x] 9. Checkpoint
   - Run `npm run test:engine` and `npx tsc -b`; fix failures in engine code only
   - Ask the user if questions arise
 

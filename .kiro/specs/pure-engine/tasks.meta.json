@@ -1,5 +1,26 @@
 {
-  "pbtResults": {},
+  "pbtResults": {
+    "8.2 Write property test for determinism": {
+      "status": "passed",
+      "lastRunTimestamp": 1795601642083
+    },
+    "8.4 Write property test for monotonic density": {
+      "status": "passed",
+      "lastRunTimestamp": 1795601647339
+    },
+    "8.3 Write property test for dark-safe behaviour": {
+      "status": "passed",
+      "lastRunTimestamp": 1795601648227
+    },
+    "8.6 Write property test for pitches in key": {
+      "status": "passed",
+      "lastRunTimestamp": 1795601651779
+    },
+    "8.7 Write property test for overrides winning": {
+      "status": "passed",
+      "lastRunTimestamp": 1795601713256
+    }
+  },
   "executionHistory": {
     "1. Add presets": [
       {
@@ -73,6 +94,289 @@
         "executionId": "53b439a3-dcb4-4bda-bc2b-f0319aafba7a",
         "chatSessionId": "sess_d8de45d1-7b24-487f-a07a-9fe7351e202c",
         "timestamp": 1795601053658
+      }
+    ],
+    "4.1 Create `src/engine/generate.ts` with `bandVelocities` (threshold, cap, tie-break, ghost gating) and the track B pitch and length rules": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471511
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601498629
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601529476
+      }
+    ],
+    "4.2 Write unit tests in `src/engine/generate.test.ts`": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471544
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601531659
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601562965
+      }
+    ],
+    "5.1 Create `src/engine/resolve.ts` that deep-copies the pattern and applies valid overrides": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471575
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601475525
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601496368
+      }
+    ],
+    "5.2 Write unit tests in `src/engine/resolve.test.ts`": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471602
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601499161
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601530000
+      }
+    ],
+    "6. Wire up `src/engine/index.ts`": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471635
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601532042
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601563510
+      }
+    ],
+    "7.1 Create `src/engine/fixtures.test.ts` asserting behaviour at density 50, not deep equality with `fixture.pattern`": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471673
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601565263
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601614949
+      }
+    ],
+    "7.2 Create `scripts/regen-fixtures.ts` and add the `regen:fixtures` npm script": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471702
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601566109
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601613466
+      }
+    ],
+    "8.1 Create shared arbitraries in `src/engine/arbitraries.ts`": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471727
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601566537
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601614340
+      }
+    ],
+    "8.2 Write property test for determinism": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471757
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601618628
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601656052
+      }
+    ],
+    "8.3 Write property test for dark-safe behaviour": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471783
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601618676
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601656841
+      }
+    ],
+    "8.4 Write property test for monotonic density": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471809
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601619045
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601657399
+      }
+    ],
+    "8.5 Write property test for the accent cap": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471836
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601619564
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601658272
+      }
+    ],
+    "8.6 Write property test for pitches in key": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471865
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601620095
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601658778
+      }
+    ],
+    "8.7 Write property test for overrides winning": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471893
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601659289
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601717765
+      }
+    ],
+    "9. Checkpoint": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601471918
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601718129
+      },
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601728855
+      }
+    ],
+    "5. Implement `resolvePattern`": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601530034
+      }
+    ],
+    "4. Implement `generatePattern`": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601563002
+      }
+    ],
+    "7. Fixtures: behaviour tests and regeneration script": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601614999
+      }
+    ],
+    "8. Property-based tests": [
+      {
+        "executionId": "1617b030-5e55-458a-acf2-f6d771d4576b",
+        "chatSessionId": "sess_810bbd00-58b1-4895-851e-e9d3678ad495",
+        "timestamp": 1795601717815
       }
     ]
   }
