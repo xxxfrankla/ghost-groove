@@ -6,27 +6,27 @@ Implement the four engine functions in `src/engine` as pure TypeScript, keep `ty
 
 ## Tasks
 
-- [ ] 1. Add presets
+- [x] 1. Add presets
   - Create `src/engine/presets.ts` with the constants (including `MIN_CONTRAST_SPAN = 48`, `SCAN_EPS = 12`, `SIGNAL_FLOOR`, `GHOST_VELOCITY`, `MAX_ACCENTS_PER_BAND`, `GHOST_MIN_DENSITY`, `DEFAULT_DENSITY`), `accentThreshold`, `ghostThreshold`, `MOODS`, scales, base grooves and register-to-octave mapping from the design
   - Hollow clap is `[12]`, Neon clap is `[4, 12]`
   - Give each mood a 16-entry `bassLine` of scale-degree indices (each 0..4) that indexes into `scaleOffsets`
   - Add a small helper to convert octave plus semitone offset to a pitch name (sharps) and to a pitch class
   - _Requirements: 3.2, 4.1, 4.2, 5.1, 5.3, 5.4, 5.5, 5.6, 5.7, 6.2, 6.3_
 
-- [ ] 2. Implement `analyzeImage`
-  - [ ] 2.1 Create `src/engine/analyze.ts` with integer luma, histogram percentiles, saturation, contrast, detailDensity, signalStrength and suggestedMood
+- [x] 2. Implement `analyzeImage`
+  - [x] 2.1 Create `src/engine/analyze.ts` with integer luma, histogram percentiles, saturation, contrast, detailDensity, signalStrength and suggestedMood
     - Handle empty images
     - _Requirements: 1.1, 1.2, 1.3, 2.1, 2.2, 2.3_
-  - [ ] 2.2 Write unit tests in `src/engine/analyze.test.ts`
+  - [x] 2.2 Write unit tests in `src/engine/analyze.test.ts`
     - Black image, dark image with a bright gap, saturated vs grey image, empty image
     - _Requirements: 1.2, 1.3, 2.1, 2.3_
 
-- [ ] 3. Implement `scanBand`
-  - [ ] 3.1 Create `src/engine/scan.ts` with band geometry clamping, per-cell brightest-decile peak, median deviation and normalization
+- [x] 3. Implement `scanBand`
+  - [x] 3.1 Create `src/engine/scan.ts` with band geometry clamping, per-cell brightest-decile peak, median deviation and normalization
     - Return 16 zeros when the highest excess over the median is below `SCAN_EPS`
     - Otherwise divide each excess by `max(dmax, MIN_CONTRAST_SPAN)` so weak contrast stays below 1
     - _Requirements: 3.1, 3.2, 3.3, 3.4, 3.5, 3.8, 3.9_
-  - [ ] 3.2 Write unit tests in `src/engine/scan.test.ts`
+  - [x] 3.2 Write unit tests in `src/engine/scan.test.ts`
     - Lone bright cell (at least 48 luma above the rest) at index 11 scores 1 there and 0 elsewhere, flat band gives zeros, vertical move changes scores, out-of-image band, `register` echoes the clamped center
     - A band containing only ±6 luma noise gives all scores below `accentThreshold(100)`
     - A band over a dim gradient spanning under 48 luma levels gives all scores below `accentThreshold(100)`
