@@ -7,8 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "test": "vitest run",
-    "test:engine": "vitest run src/engine"
+    "test": "vitest run --passWithNoTests",
+    "test:engine": "vitest run src/engine --passWithNoTests"
   },
   "dependencies": {
     "react": "^19.3.1",

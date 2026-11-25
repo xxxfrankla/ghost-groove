@@ -1,0 +1,291 @@
+{
+  "features": {
+    "saturation": 0.85,
+    "contrast": 0.8,
+    "detailDensity": 0.75,
+    "signalStrength": 0.9,
+    "suggestedMood": "neon"
+  },
+  "bands": {
+    "A": {
+      "scores": [
+        0.5,
+        0.1,
+        0.9,
+        0.1,
+        0.5,
+        0.5,
+        0.9,
+        0.9,
+        0.5,
+        0.1,
+        0.9,
+        0.1,
+        0.5,
+        0.5,
+        0.9,
+        0.9
+      ],
+      "register": 0.3
+    },
+    "B": {
+      "scores": [
+        0.9,
+        0.1,
+        0.5,
+        0.9,
+        0.1,
+        0.1,
+        0.9,
+        0.1,
+        0.9,
+        0.1,
+        0.5,
+        0.9,
+        0.1,
+        0.1,
+        0.9,
+        0.5
+      ],
+      "register": 0.65
+    }
+  },
+  "pattern": {
+    "bpm": 124,
+    "mood": "neon",
+    "tracks": {
+      "kick": [
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        }
+      ],
+      "clap": [
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0
+        }
+      ],
+      "A": [
+        {
+          "velocity": 0.45
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0.45
+        },
+        {
+          "velocity": 0.45
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0.45
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 0
+        },
+        {
+          "velocity": 0.45
+        },
+        {
+          "velocity": 0.45
+        },
+        {
+          "velocity": 1
+        },
+        {
+          "velocity": 1
+        }
+      ],
+      "B": [
+        {
+          "velocity": 1,
+          "pitch": "A2",
+          "length": 1
+        },
+        {
+          "velocity": 0,
+          "pitch": "C3",
+          "length": 1
+        },
+        {
+          "velocity": 0.45,
+          "pitch": "D3",
+          "length": 1
+        },
+        {
+          "velocity": 1,
+          "pitch": "E3",
+          "length": 1
+        },
+        {
+          "velocity": 0,
+          "pitch": "G3",
+          "length": 1
+        },
+        {
+          "velocity": 0,
+          "pitch": "A2",
+          "length": 1
+        },
+        {
+          "velocity": 1,
+          "pitch": "C3",
+          "length": 1
+        },
+        {
+          "velocity": 0,
+          "pitch": "D3",
+          "length": 1
+        },
+        {
+          "velocity": 1,
+          "pitch": "E3",
+          "length": 1
+        },
+        {
+          "velocity": 0,
+          "pitch": "G3",
+          "length": 1
+        },
+        {
+          "velocity": 0.45,
+          "pitch": "A2",
+          "length": 1
+        },
+        {
+          "velocity": 1,
+          "pitch": "C3",
+          "length": 1
+        },
+        {
+          "velocity": 0,
+          "pitch": "D3",
+          "length": 1
+        },
+        {
+          "velocity": 0,
+          "pitch": "E3",
+          "length": 1
+        },
+        {
+          "velocity": 1,
+          "pitch": "G3",
+          "length": 1
+        },
+        {
+          "velocity": 0.45,
+          "pitch": "A2",
+          "length": 1
+        }
+      ]
+    }
+  }
+}
