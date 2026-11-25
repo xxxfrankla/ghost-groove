@@ -1,0 +1,238 @@
+{
+  "pbtResults": {
+    "2.9 Write property test for drone sustain": {
+      "status": "passed",
+      "lastRunTimestamp": 1795637810664
+    },
+    "2.10 Write property test for drone retrigger conditions": {
+      "status": "passed",
+      "lastRunTimestamp": 1795637841317
+    },
+    "2.11 Write property test for drone release": {
+      "status": "passed",
+      "lastRunTimestamp": 1795637903164
+    }
+  },
+  "executionHistory": {
+    "1. Create sound settings module": [
+      {
+        "executionId": "c26d6d89-977c-4598-b195-651a6015449f",
+        "chatSessionId": "sess_66a6c8a8-d856-4c09-a857-21a330879cee",
+        "timestamp": 1795637673352
+      },
+      {
+        "executionId": "c26d6d89-977c-4598-b195-651a6015449f",
+        "chatSessionId": "sess_66a6c8a8-d856-4c09-a857-21a330879cee",
+        "timestamp": 1795637704965
+      }
+    ],
+    "2.1 Implement step planning helpers in `src/audio/schedule.ts`": [
+      {
+        "executionId": "73036ac9-9a1e-4b38-b632-b987859a691a",
+        "chatSessionId": "sess_200d7f5e-fd28-4efa-9b6a-772fdd290827",
+        "timestamp": 1795637719217
+      },
+      {
+        "executionId": "73036ac9-9a1e-4b38-b632-b987859a691a",
+        "chatSessionId": "sess_200d7f5e-fd28-4efa-9b6a-772fdd290827",
+        "timestamp": 1795637755385
+      }
+    ],
+    "2.2 Implement state transitions in `src/audio/schedule.ts`": [
+      {
+        "executionId": "bac55b2b-b91f-417e-b2de-8d3fd90a5bc7",
+        "chatSessionId": "sess_a190e689-85aa-47e3-a145-a4db69f62982",
+        "timestamp": 1795637759882
+      },
+      {
+        "executionId": "bac55b2b-b91f-417e-b2de-8d3fd90a5bc7",
+        "chatSessionId": "sess_a190e689-85aa-47e3-a145-a4db69f62982",
+        "timestamp": 1795637782042
+      }
+    ],
+    "2.9 Write property test for drone sustain": [
+      {
+        "executionId": "641621a8-d61f-4fe3-a004-20cfdce9542e",
+        "chatSessionId": "sess_47fea6b9-c6d4-4a30-963f-a63c44db0d27",
+        "timestamp": 1795637786219
+      },
+      {
+        "executionId": "641621a8-d61f-4fe3-a004-20cfdce9542e",
+        "chatSessionId": "sess_47fea6b9-c6d4-4a30-963f-a63c44db0d27",
+        "timestamp": 1795637815391
+      }
+    ],
+    "2.10 Write property test for drone retrigger conditions": [
+      {
+        "executionId": "ff4d67d4-18da-47b8-9254-508a5b2ac62b",
+        "chatSessionId": "sess_493d20df-a843-4cb3-af0d-c8db759d814f",
+        "timestamp": 1795637820136
+      },
+      {
+        "executionId": "ff4d67d4-18da-47b8-9254-508a5b2ac62b",
+        "chatSessionId": "sess_493d20df-a843-4cb3-af0d-c8db759d814f",
+        "timestamp": 1795637846824
+      }
+    ],
+    "2.11 Write property test for drone release": [
+      {
+        "executionId": "0e99cc8c-ad5d-43e5-8a0e-cf484a78bc91",
+        "chatSessionId": "sess_282aa1fe-02bc-4c80-808b-a0b434a6943d",
+        "timestamp": 1795637852517
+      },
+      {
+        "executionId": "0e99cc8c-ad5d-43e5-8a0e-cf484a78bc91",
+        "chatSessionId": "sess_282aa1fe-02bc-4c80-808b-a0b434a6943d",
+        "timestamp": 1795637907657
+      }
+    ],
+    "2.14 Write unit tests for the scheduling module": [
+      {
+        "executionId": "beedd7e6-a719-4632-8417-60deef204d9f",
+        "chatSessionId": "sess_ba6b3f9b-5701-4f88-8181-16d3d7d09b52",
+        "timestamp": 1795637912590
+      },
+      {
+        "executionId": "beedd7e6-a719-4632-8417-60deef204d9f",
+        "chatSessionId": "sess_ba6b3f9b-5701-4f88-8181-16d3d7d09b52",
+        "timestamp": 1795637963094
+      }
+    ],
+    "2. Implement pure scheduling module": [
+      {
+        "executionId": "beedd7e6-a719-4632-8417-60deef204d9f",
+        "chatSessionId": "sess_ba6b3f9b-5701-4f88-8181-16d3d7d09b52",
+        "timestamp": 1795637963121
+      }
+    ],
+    "3. Checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "10788166-17fa-4ffb-af72-28796f10f5f5",
+        "chatSessionId": "sess_a121ca7c-3028-4c47-a438-1e011a20ad1a",
+        "timestamp": 1795638223754
+      },
+      {
+        "executionId": "10788166-17fa-4ffb-af72-28796f10f5f5",
+        "chatSessionId": "sess_a121ca7c-3028-4c47-a438-1e011a20ad1a",
+        "timestamp": 1795638241483
+      }
+    ],
+    "4.1 Create `src/audio/tonePlayer.ts` with group construction": [
+      {
+        "executionId": "e3a2e1a0-531d-4470-b942-5784c1f903a9",
+        "chatSessionId": "sess_fef05f79-21e8-4a5a-a4c1-6afb5643303b",
+        "timestamp": 1795638289584
+      },
+      {
+        "executionId": "e3a2e1a0-531d-4470-b942-5784c1f903a9",
+        "chatSessionId": "sess_fef05f79-21e8-4a5a-a4c1-6afb5643303b",
+        "timestamp": 1795638371352
+      }
+    ],
+    "4.2 Implement `start`, `stop`, `dispose`, `setPattern`, `setMood`": [
+      {
+        "executionId": "e3a2e1a0-531d-4470-b942-5784c1f903a9",
+        "chatSessionId": "sess_fef05f79-21e8-4a5a-a4c1-6afb5643303b",
+        "timestamp": 1795638371939
+      },
+      {
+        "executionId": "e3a2e1a0-531d-4470-b942-5784c1f903a9",
+        "chatSessionId": "sess_fef05f79-21e8-4a5a-a4c1-6afb5643303b",
+        "timestamp": 1795638432772
+      }
+    ],
+    "4.3 Implement tick, mood switch release and `onStep`": [
+      {
+        "executionId": "e3a2e1a0-531d-4470-b942-5784c1f903a9",
+        "chatSessionId": "sess_fef05f79-21e8-4a5a-a4c1-6afb5643303b",
+        "timestamp": 1795638433221
+      },
+      {
+        "executionId": "e3a2e1a0-531d-4470-b942-5784c1f903a9",
+        "chatSessionId": "sess_fef05f79-21e8-4a5a-a4c1-6afb5643303b",
+        "timestamp": 1795638533631
+      }
+    ],
+    "4. Implement Tone integration": [
+      {
+        "executionId": "e3a2e1a0-531d-4470-b942-5784c1f903a9",
+        "chatSessionId": "sess_fef05f79-21e8-4a5a-a4c1-6afb5643303b",
+        "timestamp": 1795638533664
+      }
+    ],
+    "4.4 Write integration tests with a stubbed Tone module": [
+      {
+        "executionId": "dba6f958-56bf-4b8c-86cc-dea093d22ffd",
+        "chatSessionId": "sess_8fcaa8ba-f508-49ec-92e6-008151f03c3c",
+        "timestamp": 1795638548358
+      },
+      {
+        "executionId": "dba6f958-56bf-4b8c-86cc-dea093d22ffd",
+        "chatSessionId": "sess_8fcaa8ba-f508-49ec-92e6-008151f03c3c",
+        "timestamp": 1795638618731
+      }
+    ],
+    "5.1 Update `src/audio/index.ts`": [
+      {
+        "executionId": "9a7d1045-d42c-401b-9255-eac7cac0d897",
+        "chatSessionId": "sess_b089eafe-b308-4f69-b80c-7d53cdc9b492",
+        "timestamp": 1795638637174
+      },
+      {
+        "executionId": "9a7d1045-d42c-401b-9255-eac7cac0d897",
+        "chatSessionId": "sess_b089eafe-b308-4f69-b80c-7d53cdc9b492",
+        "timestamp": 1795638769406
+      }
+    ],
+    "5. Wire the player into the audio entry point": [
+      {
+        "executionId": "9a7d1045-d42c-401b-9255-eac7cac0d897",
+        "chatSessionId": "sess_b089eafe-b308-4f69-b80c-7d53cdc9b492",
+        "timestamp": 1795638769439
+      }
+    ],
+    "6.1 Create `dev/listen.html` and `dev/listen.ts`": [
+      {
+        "executionId": "c5cd0929-1e2a-4e83-a01a-0ad0570fa6fc",
+        "chatSessionId": "sess_744ef4c5-f808-4ed6-a27a-887c32990153",
+        "timestamp": 1795638834808
+      },
+      {
+        "executionId": "c5cd0929-1e2a-4e83-a01a-0ad0570fa6fc",
+        "chatSessionId": "sess_744ef4c5-f808-4ed6-a27a-887c32990153",
+        "timestamp": 1795638901671
+      }
+    ],
+    "6.2 Include `dev` in `tsconfig.json`": [
+      {
+        "executionId": "c5cd0929-1e2a-4e83-a01a-0ad0570fa6fc",
+        "chatSessionId": "sess_744ef4c5-f808-4ed6-a27a-887c32990153",
+        "timestamp": 1795638834854
+      },
+      {
+        "executionId": "c5cd0929-1e2a-4e83-a01a-0ad0570fa6fc",
+        "chatSessionId": "sess_744ef4c5-f808-4ed6-a27a-887c32990153",
+        "timestamp": 1795638901802
+      }
+    ],
+    "6. Build the dev listening page": [
+      {
+        "executionId": "c5cd0929-1e2a-4e83-a01a-0ad0570fa6fc",
+        "chatSessionId": "sess_744ef4c5-f808-4ed6-a27a-887c32990153",
+        "timestamp": 1795638901845
+      }
+    ],
+    "7. Final checkpoint - Ensure all tests pass": [
+      {
+        "executionId": "d36e0b91-e56c-480c-b43e-4d2e8000b07e",
+        "chatSessionId": "sess_58d6ae71-5bd4-47ba-8b46-b0e399c94381",
+        "timestamp": 1795638926814
+      },
+      {
+        "executionId": "d36e0b91-e56c-480c-b43e-4d2e8000b07e",
+        "chatSessionId": "sess_58d6ae71-5bd4-47ba-8b46-b0e399c94381",
+        "timestamp": 1795638948497
+      }
+    ]
+  }
+}
